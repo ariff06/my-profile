@@ -18,6 +18,38 @@ html {
   }
 }
 
+.page-content {
+  padding-top: 100px;
+  background-color: white;
+}
+
+.img-fluid{
+  animation: circleRotate 3.4s linear infinite;
+}
+
+@keyframes circleRotate{
+  0%{
+      transform: rotate(0);
+  }
+  100%{
+      transform: rotate(360deg);
+}}
+
+.img-fluid2{
+  animation: floatImage 2s linear infinite;
+}
+@keyframes floatImage{
+  0%{
+      transform: translateY(0);
+  }
+
+  50%{
+      transform: translateY(-24px);
+  }
+  100%{
+      transform: translateY(0);
+}}
+
 /**
  * Add .section to every anchored element for scroll margin
  */
@@ -92,9 +124,6 @@ html {
   background-repeat: no-repeat;
 }
 
-img.avatar {
-  border-radius: 30px;
-}
 
 /* Masonary grid for portfolio */
 .grid:after {
